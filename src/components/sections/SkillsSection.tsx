@@ -15,7 +15,7 @@ const skillCategories = [
   {
     title: "Languages",
     icon: Code2,
-    skills: ["Java", "Python", "JavaScript", "TypeScript", "HTML5", "CSS3"],
+    skills: ["Java", "Python", "JavaScript", "HTML5", "CSS3"],
     gradient: "from-violet/10 to-electric-blue/10",
     iconBg: "bg-gradient-primary"
   },
@@ -36,35 +36,35 @@ const skillCategories = [
   {
     title: "Database",
     icon: Database,
-    skills: ["MongoDB", "Firebase", "Firestore", "Database Design", "NoSQL"],
+    skills: ["MongoDB", "Firebase", "Firestore", "NoSQL"],
     gradient: "from-violet/10 to-teal/10",
     iconBg: "bg-gradient-primary"
   },
   {
-    title: "Tools & Technologies",
+    title: "Tools & Platforms",
     icon: Wrench,
-    skills: ["GitHub", "Postman", "Firebase Auth", "Render", "Git", "VS Code"],
+    skills: ["IntelliJ IDEA", "VS Code", "Git", "Docker (basic)", "Linux (basic)","GitHub", "Postman", "Firebase Auth"],
     gradient: "from-teal/10 to-electric-blue/10",
     iconBg: "bg-gradient-accent"
   },
   {
     title: "Cloud & AI",
     icon: Cloud,
-    skills: ["Google Cloud", "Google Gemini API", "Firebase", "AI Integration", "Cloud Deployment"],
+    skills: ["Google Gemini API", "Firebase", "AI Integration"],
     gradient: "from-electric-blue/10 to-violet/10",
     iconBg: "bg-gradient-secondary"
   },
   {
     title: "Mobile & Emerging",
     icon: Brain,
-    skills: ["React Native", "Progressive Web Apps", "Machine Learning", "AI Chatbots"],
+    skills: ["Mobile-Responsive Web Apps", "AI Chatbots"],
     gradient: "from-violet/10 to-electric-blue/10",
     iconBg: "bg-gradient-primary"
   },
   {
     title: "Security & Others",
     icon: Shield,
-    skills: ["Cybersecurity", "Web Security", "Authentication", "Data Protection"],
+    skills: ["Basic Web Security", "Firebase Auth", "API Authentication"],
     gradient: "from-teal/10 to-violet/10",
     iconBg: "bg-gradient-accent"
   }

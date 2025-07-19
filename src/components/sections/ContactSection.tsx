@@ -6,6 +6,7 @@ import {
   Code2, 
   Award,
   Mail,
+  Zap,
   MapPin,
   Calendar,
   ExternalLink,
@@ -31,14 +32,24 @@ const socialLinks = [
     iconBg: "bg-gray-700",
     hoverColor: "hover:text-gray-700"
   },
-  {
-    name: "GeeksforGeeks",
-    url: "https://www.geeksforgeeks.org/user/saloniigupta/",
-    icon: Code2,
-    description: "My coding profile & articles",
-    gradient: "from-green-500/10 to-green-600/10", 
-    iconBg: "bg-green-500",
-    hoverColor: "hover:text-green-500"
+  //   {
+  //   name: "LeetCode",
+  //   url: "https://leetcode.com/u/saloni_89/",
+  //   icon: Code2,
+  //   description: "My coding profile",
+  //   gradient: "from-green-500/10 to-green-600/10", 
+  //   iconBg: "bg-green-500",
+  //   hoverColor: "hover:text-green-500"
+  // },
+
+    {
+    name: "LeetCode",
+    url: "https://leetcode.com/u/saloni_89/",
+    icon: Zap,
+    description: "Algorithm & data structure solutions",
+    gradient: "from-orange-500/10 to-orange-600/10",
+    iconBg: "bg-orange-500",
+    hoverColor: "hover:text-orange-500"
   },
   {
     name: "HackerRank",
@@ -48,6 +59,15 @@ const socialLinks = [
     gradient: "from-emerald-500/10 to-emerald-600/10",
     iconBg: "bg-emerald-500", 
     hoverColor: "hover:text-emerald-500"
+  },
+    {
+    name: "GeeksforGeeks",
+    url: "https://www.geeksforgeeks.org/user/saloniigupta/",
+    icon: Code2,
+    description: "My coding profile & articles",
+    gradient: "from-green-500/10 to-green-600/10", 
+    iconBg: "bg-green-500",
+    hoverColor: "hover:text-green-500"
   }
 ]
 
@@ -193,7 +213,7 @@ export function ContactSection() {
             <CardContent className="p-8">
               <p className="text-lg text-muted-foreground flex items-center justify-center">
                 Made with <Heart className="h-5 w-5 text-red-500 mx-2 animate-pulse" /> 
-                and lots of coffee by Saloni Gupta
+               by Saloni Gupta
               </p>
               <p className="text-sm text-muted-foreground mt-2">
                 This portfolio is built with React, TypeScript, and Tailwind CSS

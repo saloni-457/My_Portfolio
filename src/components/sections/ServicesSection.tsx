@@ -14,13 +14,13 @@ import {
 const services = [
   {
     title: "Full-stack Web Development",
-    description: "Modern, responsive, end-to-end websites built with cutting-edge technologies. From concept to deployment, I create scalable web applications that deliver exceptional user experiences.",
+    description: "Modern, responsive, end-to-end websites built with robust technologies. From concept to deployment, I build scalable web applications focused on real-world problem solving and user experience",
     features: [
-      "Responsive Design",
-      "Modern UI/UX", 
-      "Performance Optimized",
-      "SEO Friendly",
-      "Cross-browser Compatible"
+    "Responsive & Clean UI (Tailwind, React)",
+    "Firebase & MongoDB Integration",
+    "REST API Development (Flask)",
+    "Dark/Light Mode, Accessibility",
+    "Deployment via Render, Vercel, GitHub Pages"
     ],
     icon: Globe,
     gradient: "from-violet/10 to-electric-blue/10",
@@ -29,13 +29,13 @@ const services = [
   },
   {
     title: "AI-powered Chatbots",
-    description: "Intelligent conversational interfaces integrated with APIs and smart response logic. Create engaging user experiences with natural language processing and contextual understanding.",
+    description: "Custom conversational interfaces using Gemini API with real-time, multilingual, and voice-enabled features. I design intelligent bots that interact contextually and save structured chat history.",
     features: [
-      "Natural Language Processing",
-      "Context-Aware Responses",
-      "Multi-language Support", 
-      "API Integration",
-      "Real-time Conversations"
+      "Google Gemini API Integration",
+      "Context-aware, Real-time Responses",
+      "Firebase Login + MongoDB Chat History",
+      "Text-to-Speech & Speech Recognition",
+      "Multilingual Support (EN | HI | ES)"
     ],
     icon: Bot,
     gradient: "from-teal/10 to-violet/10",
@@ -44,13 +44,13 @@ const services = [
   },
   {
     title: "API Integration",
-    description: "Seamless integration of REST APIs and third-party services. Connect your applications with external data sources, payment gateways, and cloud services for enhanced functionality.",
+    description: "Robust integration of external APIs and services to add intelligence, content, and real-time functionality. I connect AI models, databases, and third-party platforms into seamless applications.",
     features: [
-      "REST API Development",
-      "Third-party Integrations",
-      "Data Synchronization",
+      "REST API Integration (News, Gemini, Firebase)",
+      "Realtime Updates & Translations",
       "Authentication Systems",
-      "Real-time Updates"
+      "Google Cloud / Render Deployment",
+      "TTS/STT & Language APIs"
     ],
     icon: Plug,
     gradient: "from-electric-blue/10 to-teal/10",
@@ -59,13 +59,12 @@ const services = [
   },
   {
     title: "React Native Apps",
-    description: "Cross-platform mobile applications with native performance. Currently exploring mobile development to bring web technologies to mobile platforms with shared codebases.",
+    description: "Currently exploring mobile-first development using React Native. I’m working on building responsive, shared-codebase apps that bring web features to mobile platforms.",
     features: [
       "Cross-platform Development",
-      "Native Performance",
-      "Shared Codebase",
-      "Modern UI Components",
-      "Device Integration"
+      "Native-like Performance",
+      "Shared Component Architecture",
+      "Modern UI Components"
     ],
     icon: Smartphone,
     gradient: "from-violet/10 to-teal/10",

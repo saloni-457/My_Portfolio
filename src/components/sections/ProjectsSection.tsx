@@ -17,12 +17,13 @@ const projects = [
   {
     title: "GenieX — AI ChatBot",
     description: "A full-stack chatbot built with Google Gemini API that mimics ChatGPT experience with advanced features and multilingual support.",
-    longDescription: "An intelligent conversational AI platform featuring real-time responses, chat history management, and seamless user authentication.",
+                   
+    longDescription: "An intelligent conversational AI platform featuring real-time Gemini responses, chat history management, folder organization, and seamless user authentication.",
     features: [
       "Firebase Login/Auth",
       "Chat History with Sidebar", 
       "New Chat, Chat Renaming, Deletion",
-      "Multilingual Support (English, Hindi, Spanish)",
+      "Multilingual Support (English, Spanish, French, German etc )",
       "Folders for Chat Organization",
       "Text-to-Speech & Speech-to-Text",
       "Responsive UI with Dark/Light Mode",
@@ -33,50 +34,48 @@ const projects = [
     gradient: "from-violet/10 to-electric-blue/10",
     iconBg: "bg-gradient-primary",
     shadow: "shadow-violet",
-    githubUrl: "#",
-    liveUrl: "#",
+    githubUrl: "https://github.com/saloni-457/GenieX-AI-ChatBot.git",
+    liveUrl: "https://genix-frontend.netlify.app/",
     status: "Available upon request"
   },
   {
     title: "NewsWave — Real-Time News App", 
     description: "A web app that fetches and displays real-time news based on category and country with clean, responsive design.",
-    longDescription: "Stay informed with the latest news from around the world, filtered by your preferences and displayed in an intuitive interface.",
+    longDescription: "Stay informed with the latest headlines filtered by your preferences, delivered in a smooth and user-friendly interface.",
     features: [
       "Search by keywords",
       "Category-wise and country-wise filters", 
-      "Clean UI with responsive layout",
       "Real-time news updates",
       "Fast loading and caching",
-      "Mobile-optimized experience"
+      "Clean & responsive UI"
     ],
     techStack: ["JavaScript", "HTML5", "CSS3", "NewsAPI"],
     icon: Newspaper,
     gradient: "from-teal/10 to-violet/10", 
     iconBg: "bg-gradient-accent",
     shadow: "shadow-teal",
-    githubUrl: "#",
+    githubUrl: "https://github.com/saloni-457/NewsWave.git",
     liveUrl: "#",
     status: "Live Demo Available"
   },
   {
     title: "Snazzy Shop — E-commerce Website",
-    description: "A sleek and interactive web-based shopping platform offering a modern online retail experience with full shopping functionality.",
-    longDescription: "A complete e-commerce solution with product browsing, cart management, and smooth user interactions designed for optimal shopping experience.",
+    description: "A sleek and interactive e-commerce UI prototype with essential features like product listings, responsive layout, and search filtering.",
+    longDescription: "A This project focuses on delivering a modern online shopping experience through clean visuals and intuitive interactions. (Currently frontend-only).",
     features: [
-      "Browse products by categories",
-      "Add to Cart & Wishlist functionality",
-      "Product detail view with images and pricing", 
-      "Responsive layout for all screen sizes",
-      "Smooth UI transitions and hover effects",
-      "Search and filter functionality"
+      "Browse Products by Categories",  
+      "Responsive Layout",  
+      "Product Detail View with Images & Pricing",  
+      "Smooth Transitions & Hover Effects",  
+      "Search and Filter Functionality  "
     ],
     techStack: ["HTML", "CSS", "JavaScript"],
     icon: ShoppingCart,
     gradient: "from-electric-blue/10 to-teal/10",
     iconBg: "bg-gradient-secondary", 
     shadow: "shadow-glow",
-    githubUrl: "#",
-    liveUrl: "#",
+    githubUrl: "https://github.com/saloni-457/SnazzyShop.git",
+    liveUrl: "https://clever-faloodeh-0e3232.netlify.app/",
     status: "Featured Project"
   }
 ]
@@ -191,8 +190,58 @@ export function ProjectsSection() {
           ))}
         </div>
 
+{/* Coming Soon Projects */}
+<div className="animate-fade-in">
+  <h3 className="text-2xl font-bold text-center mb-8">
+    Coming <span className="bg-gradient-accent bg-clip-text text-transparent">Soon</span>
+  </h3>
+  
+  {/* <div className="grid md:grid-cols-3 gap-6"> */}
+  <div className="flex flex-wrap justify-center gap-6">
+
+    {/* Static Project 1 */}
+    {/* <Card className="bg-gradient-to-br from-muted/20 to-muted/5 border-border/50 hover:border-primary/30 transition-all duration-300 hover:scale-105 group">
+      <CardHeader className="text-center pb-4">
+        <div className="bg-gradient-accent/20 p-4 rounded-xl mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
+          <span className="text-2xl">🛡️</span>
+        </div>
+        <CardTitle className="text-lg text-foreground group-hover:text-primary transition-colors">
+          AI Threat Detection System
+        </CardTitle>
+      </CardHeader>
+      <CardContent className="text-center pt-0">
+        <p className="text-sm text-muted-foreground mb-4">Python, Node.js, Machine Learning</p>
+        <Badge variant="secondary" className="bg-accent/20 text-accent">
+          In Development
+        </Badge>
+      </CardContent>
+    </Card> */}
+
+    {/* Static Project 1 */}
+    <Card className="bg-gradient-to-br from-muted/20 to-muted/5 border-border/50 hover:border-primary/30 transition-all duration-300 hover:scale-105 group">
+      <CardHeader className="text-center pb-4">
+        <div className="bg-gradient-accent/20 p-4 rounded-xl mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
+          <span className="text-2xl">📱</span>
+        </div>
+        <CardTitle className="text-lg text-foreground group-hover:text-primary transition-colors">
+          Domestic Violence Reporting App
+        </CardTitle>
+      </CardHeader>
+      <CardContent className="text-center pt-0">
+        <p className="text-sm text-muted-foreground mb-4">React Native, Firebase</p>
+        <Badge variant="secondary" className="bg-accent/20 text-accent">
+          In Development
+        </Badge>
+      </CardContent>
+    </Card>
+  </div>
+</div>
+
+
+
+{/* 
         {/* Coming Soon Projects */}
-        <div className="animate-fade-in">
+        {/* <div className="animate-fade-in">
           <h3 className="text-2xl font-bold text-center mb-8">
             Coming <span className="bg-gradient-accent bg-clip-text text-transparent">Soon</span>
           </h3>
@@ -203,6 +252,7 @@ export function ProjectsSection() {
                 className="bg-gradient-to-br from-muted/20 to-muted/5 border-border/50 hover:border-primary/30 transition-all duration-300 hover:scale-105 group"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
+                
                 <CardHeader className="text-center pb-4">
                   <div className="bg-gradient-accent/20 p-4 rounded-xl mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
                     <project.icon className="h-8 w-8 text-accent mx-auto" />
@@ -211,16 +261,18 @@ export function ProjectsSection() {
                     {project.title}
                   </CardTitle>
                 </CardHeader>
+
                 <CardContent className="text-center pt-0">
                   <p className="text-sm text-muted-foreground mb-4">{project.tech}</p>
                   <Badge variant="secondary" className="bg-accent/20 text-accent">
                     In Development
                   </Badge>
                 </CardContent>
+
               </Card>
             ))}
           </div>
-        </div>
+        </div>  */}
 
         {/* Bottom CTA */}
         <div className="text-center mt-16 animate-fade-in">
@@ -230,7 +282,7 @@ export function ProjectsSection() {
                 Want to see more?
               </h3>
               <p className="text-muted-foreground mb-6">
-                These are just a few highlights. I'm always working on new projects and experimenting with cutting-edge technologies.
+                These are just a few highlights. I'm always working on new projects and experimenting with smart, modern technologies.
               </p>
               <Button 
                 className="bg-gradient-primary hover:bg-gradient-secondary text-white shadow-violet hover:shadow-glow transition-all duration-300"

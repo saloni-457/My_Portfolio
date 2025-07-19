@@ -40,11 +40,10 @@ export function AboutSection() {
               <h3 className="text-xl font-semibold text-foreground mb-3">Interests & Passions</h3>
               <div className="flex flex-wrap gap-2">
                 {[
-                  "AI & Machine Learning",
+                  "AI & Chatbots",
+                  "Full-Stack Development",
                   "Cybersecurity",
                   "Cloud Technologies", 
-                  "Open Source",
-                  "Real-world Applications",
                   "Innovation"
                 ].map((interest) => (
                   <Badge key={interest} variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20">

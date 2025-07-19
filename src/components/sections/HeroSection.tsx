@@ -27,9 +27,11 @@ export function HeroSection() {
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="animate-fade-in">
           {/* Profile Image */}
-          <div className="mb-8 flex justify-center">
+          <div className="mt-20 md:mt-32 mb-8 flex justify-center">
             <div className="relative">
-              <div className="w-48 h-48 rounded-full overflow-hidden shadow-glow ring-2 ring-primary/30">
+              <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-full overflow-hidden shadow-glow ring-2 ring-primary/30">
+
+              {/* <div className="w-48 h-48 rounded-full overflow-hidden shadow-glow ring-2 ring-primary/30"> */}
                 <img 
                   src={profileImage} 
                   alt="Saloni Gupta"
@@ -54,9 +56,12 @@ export function HeroSection() {
           </p>
           
           {/* Description */}
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            Passionate about building secure, intelligent web applications that solve real-world problems. 
-            Currently pursuing B.Tech at PSIT, Kanpur, with expertise in modern web technologies and AI integration.
+          <p className="text-lg text-muted-foreground mb-2 leading-relaxed">
+          Passionate about building secure, intelligent web applications that solve real-world problems.
+          </p>
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed text-balanced">
+            {/* Passionate about building secure, intelligent web applications that solve real-world problems. <br /> */}
+            Currently pursuing B.Tech at Pranveer Singh Institute Of Technology, Kanpur. With hands-on experience in modern web technologies and AI integration. <br />
           </p>
           
           {/* CTA Buttons */}
