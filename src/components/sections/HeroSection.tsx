@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ArrowDown, Download } from "lucide-react"
-import profileImage from "@/assets/saloni-profile.jpg"
+import profileImage from "@/assets/saloni-profile-new.jpg"
 
 export function HeroSection() {
   const scrollToProjects = () => {
