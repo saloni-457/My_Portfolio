@@ -16,7 +16,7 @@ import {
 const socialLinks = [
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/saloni-gupta-6557bb32a/",
+    url: "https://www.linkedin.com/in/saloni-gupta47/",
     icon: Linkedin,
     description: "Connect with me professionally",
     gradient: "from-blue-500/10 to-blue-600/10",

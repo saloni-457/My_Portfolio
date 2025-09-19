@@ -1,6 +1,8 @@
 import { Navigation } from "@/components/Navigation"
 import { ThemeToggle } from "@/components/ThemeToggle"
-import { HeroSection } from "@/components/sections/HeroSection"
+// import { HeroSection } from "@/components/sections/HeroSection"
+import HeroSection from "@/components/sections/HeroSection"
+
 import { AboutSection } from "@/components/sections/AboutSection"
 import { SkillsSection } from "@/components/sections/SkillsSection"
 import { ServicesSection } from "@/components/sections/ServicesSection"
