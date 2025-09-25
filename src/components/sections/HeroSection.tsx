@@ -290,3 +290,7 @@ export default function HeroSection(): JSX.Element {
 //             Currently pursuing B.Tech at Pranveer Singh Institute Of Technology, Kanpur. With hands-on experience in modern web technologies and AI integration. <br />
 //           Passionate about building secure, intelligent web applications that solve real-world problems.
 //               💡 "Build something that people can't stop using!"
+
+
+
+
