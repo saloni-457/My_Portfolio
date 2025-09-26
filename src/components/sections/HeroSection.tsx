@@ -83,21 +83,7 @@ export default function HeroSection(): JSX.Element {
   return (
     <section className="relative flex flex-col items-center justify-center h-screen w-full bg-black text-white overflow-hidden">
       {/* Centered Text (z-10 to sit above the particles) */}
-      {/* <div className="z-10 text-center px-4">
-        <h1 className="text-5xl md:text-7xl font-extrabold mb-6">
-          Hi! I'm Saloni Gupta
-        </h1>
 
-        <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
-          A <span className="font-semibold">Software Developer</span>{" "}
-          specializing in frontend and mobile app development.
-        </p>
-
-        <p className="text-md md:text-lg text-gray-400 mt-3 max-w-3xl mx-auto">
-          Passionate about <span className="text-white">learning</span> and{" "}
-          <span className="text-white">building clean, professional code</span>.
-        </p>
-      </div> */}
 
 <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-center">
   <span className="block bg-gradient-primary bg-clip-text text-transparent">
@@ -194,6 +180,8 @@ export default function HeroSection(): JSX.Element {
           />
         </div>
       )}  
+
+      
 
       {/* {inited && (
   <div className="absolute bottom-0 left-0 w-full h-1/2 pointer-events-none">
