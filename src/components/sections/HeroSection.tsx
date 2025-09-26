@@ -33,11 +33,6 @@ export default function HeroSection(): JSX.Element {
     // console.log("particles loaded", container);
   }, []);
 
-//   const particlesLoaded = useCallback(async (container: Container | undefined) => {
-//   // optional debugging
-//   // console.log(container);
-// }, []);
-
 
   const options: ISourceOptions = useMemo(
     () => ({
@@ -168,7 +163,6 @@ export default function HeroSection(): JSX.Element {
         <div className="pointer-events-none absolute left-1/2 -top-1 h-1 w-44 -translate-x-1/2 rounded-full bg-cyan-400/40 blur-md" />
       </div>
 
-      {/* Particles container — absolutely positioned at bottom and 50% height*/}
       {inited && (
         <div className="absolute bottom-0 left-0 w-full h-1/2 pointer-events-none">
           <Particles
