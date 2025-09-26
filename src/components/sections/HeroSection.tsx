@@ -1,8 +1,7 @@
 /* src/components/sections/HeroSection.tsx */
 import { useEffect, useMemo, useState, useCallback } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-// import { loadSlim } from "@tsparticles/slim";
-// import Particles from "@tsparticles/react";
+
 import { loadSlim } from "@tsparticles/slim";
 // import type { Engine, Container, ISourceOptions } from "tsparticles-engine";
 

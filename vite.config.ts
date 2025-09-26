@@ -5,6 +5,7 @@ import componentTagger from "vite-plugin-component-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+    base: "/",  // ✅ Add this
   server: {
     host: "::",
     port: 8080,
