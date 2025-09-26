@@ -10,8 +10,8 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  plugins: [
-    react(),
+  plugins: [react(),
+
     mode === "development" && componentTagger(),
   ].filter(Boolean),
   resolve: {
@@ -19,9 +19,12 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  optimizeDeps: {
+    include: ["@tsparticles/react", "@tsparticles/slim", "@tsparticles/engine"],
+  },
   build: {
     rollupOptions: {
-      external: ["@tsparticles/react"], // ✅ only string names
+      // external: ["@tsparticles/react"], // ✅ only string names
     },
   },
 }));
