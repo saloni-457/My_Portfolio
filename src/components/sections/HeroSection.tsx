@@ -1,11 +1,16 @@
 /* src/components/sections/HeroSection.tsx */
 import { useEffect, useMemo, useState, useCallback } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
+// import { loadSlim } from "@tsparticles/slim";
+// import Particles from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+// import type { Engine, Container, ISourceOptions } from "tsparticles-engine";
+
 import {
   type ISourceOptions,
   type Container,
   MoveDirection,
+  Engine,
   OutMode,
 } from "@tsparticles/engine";
 
@@ -19,10 +24,21 @@ export default function HeroSection(): JSX.Element {
     }).then(() => setInited(true));
   }, []);
 
+//   const particlesInit = useCallback(async (engine: any) => {
+//   await loadSlim(engine);
+// }, []);
+
+
   const particlesLoaded = useCallback(async (container?: Container) => {
     /* optional: use the container for runtime changes or debugging */
     // console.log("particles loaded", container);
   }, []);
+
+//   const particlesLoaded = useCallback(async (container: Container | undefined) => {
+//   // optional debugging
+//   // console.log(container);
+// }, []);
+
 
   const options: ISourceOptions = useMemo(
     () => ({
@@ -52,12 +68,13 @@ export default function HeroSection(): JSX.Element {
         size: { value: { min: 1, max: 2 } },
         links: { enable: false },
 
-        move: {
-          enable: true,
-          speed: 0.6,
-          direction: MoveDirection.top,        // gently move upward (so they go under text)
-          outModes: { default: OutMode.out },
-        },
+      move: {
+        enable: true,
+        speed: 0.6,
+        direction: MoveDirection.top,   // instead of MoveDirection.top
+        outModes: { default: OutMode.out },  // instead of OutMode.out
+      },
+
       },
     }),
     []
@@ -166,16 +183,28 @@ export default function HeroSection(): JSX.Element {
         <div className="pointer-events-none absolute left-1/2 -top-1 h-1 w-44 -translate-x-1/2 rounded-full bg-cyan-400/40 blur-md" />
       </div>
 
-      {/* Particles container — absolutely positioned at bottom and 50% height */}
+      {/* Particles container — absolutely positioned at bottom and 50% height*/}
       {inited && (
         <div className="absolute bottom-0 left-0 w-full h-1/2 pointer-events-none">
           <Particles
             id="tsparticles"
+            // init={particlesInit}
             options={options}
             particlesLoaded={particlesLoaded}
           />
         </div>
-      )}
+      )}  
+
+      {/* {inited && (
+  <div className="absolute bottom-0 left-0 w-full h-1/2 pointer-events-none">
+    <Particles 
+    id="tsparticles" 
+    options={options} 
+    particlesLoaded={particlesLoaded} />
+      </div>
+    )} */}
+
+
     </section>
   );
 }
