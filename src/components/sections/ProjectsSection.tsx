@@ -14,7 +14,7 @@ import {
 } from "lucide-react"
 
 const projects = [
-  {
+{
     title: "GenieX — AI ChatBot",
     description: "A full-stack chatbot built with Google Gemini API that mimics ChatGPT experience with advanced features and multilingual support.",
                    
