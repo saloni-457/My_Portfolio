@@ -55,7 +55,7 @@ const projects = [
     iconBg: "bg-gradient-accent",
     shadow: "shadow-teal",
     githubUrl: "https://github.com/saloni-457/NewsWave.git",
-    liveUrl: "#",
+    liveUrl: "https://dailynews-on-newswave.netlify.app/",
     status: "Live Demo Available"
   },
   {
